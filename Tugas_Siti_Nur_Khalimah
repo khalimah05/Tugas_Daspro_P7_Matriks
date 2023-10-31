@@ -1,0 +1,51 @@
+# Tugas Pak Rosyid
+
+import numpy as np
+## NO 1 Penjumlahan dan Pengurangan Matriks 3x3 
+print('Soal ke 1 Penjumlahan dan Pengurangan Matriks 3x3')
+
+mat1 = [[6, 0],[2, 6],[3,0]]
+mat2 = [[2, 0],[4, 2],[5,4]]
+
+
+for x in range(0, len(mat1)):
+  for y in range(0, len(mat1[0])):
+    print(mat1[x][y] + mat2[x][y], end=' ',),
+
+## Soal ke 2 Perkalian Matriks
+print('Soal ke 2 Perkalian Matriks')
+
+matriks1 = np.array([[8,2], [3,5]])
+matriks2 = np.array([[5,3], [2,8]])
+
+print(np.dot(matriks1, matriks2))
+
+## soal ke 3 Transpose matriks 3x2
+print('soal ke 3 Transpose matriks 3x2')
+
+matriks = np.array([[5,4], [7,3],[4,6]])
+
+print(np.transpose(matriks))
+
+## Soal ke 4 invers matriks 3x3
+print('Soal ke 4 invers matriks 3x3')
+
+matriks = np.array([[1,7,3], [2,5,9], [7,2,5]])
+
+print(np.linalg.inv(matriks))
+
+## Soal ke 5 Matriks identitas 4x4
+print('Soal ke 5 Matriks identitas 4x4')
+
+matriks_identitas = np.eye(4)
+
+print(matriks_identitas)
+
+## Soal ke 6 reshape Matriks
+print('Soal ke 6 reshape Matriks')
+
+matriks1 = np.array([[1,7,2,3], [4,9,2,6],[8,4,1,9],[7,3,5,9]])
+
+matriks_reshape= np.reshape(matriks1,(2,8))
+
+print(matriks_reshape)
